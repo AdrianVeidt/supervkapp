@@ -1,7 +1,8 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace supervkapp.Vk {
+namespace supervkapp 
+{
 	public class ResolveResult
 	{
 		[JsonProperty("type")]

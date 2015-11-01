@@ -2,7 +2,8 @@
 
 using Newtonsoft.Json;
 
-namespace supervkapp.Vk {
+namespace supervkapp 
+{
 	public class AboutComments
 	{
 		[JsonProperty("count")]

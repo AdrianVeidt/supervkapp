@@ -1,7 +1,8 @@
 ﻿
 using Newtonsoft.Json;
 
-namespace supervkapp.Vk {
+namespace supervkapp
+{
 	public class User {
 		[JsonProperty("id")]
 		public uint Id { get; set; }
@@ -30,24 +31,19 @@ namespace supervkapp.Vk {
 		[JsonProperty("bdate")]
 		public string Birthday { get; set; }
 
-		[JsonProperty("city")]
-		public City City { get; set; }
-		[JsonProperty("country")]
-		public Country Country { get; set; }
-		[JsonProperty("home_town")]
-		public string HomeTown { get; set; }
-
 		[JsonProperty("online")]
 		public bool IsOnline { get; set; }
 	}
 
-	public enum DeactivatedStatus {
+	public enum DeactivatedStatus 
+	{
 		None = 0,
 		Deleted = 1,
 		Banned = 2
 	}
 
-	public enum Sex {
+	public enum Sex 
+	{
 		None = 0,
 		Female = 1,
 		Male = 2
