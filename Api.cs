@@ -13,7 +13,7 @@ namespace supervkapp
 {
 	public class Api 
 	{
-		private const string Url = "https://api.vk.com/method/{0}?{1}&v=5.37";
+		private const string Url = "https://api.vk.com/method/{0}?{1}&v=5.37&access_token=82bec40f2b3fffd36454c27001b37239bb1545250de02d8867471baf8d0ae2cce0a95cace66f722bac110";
 		public  ResolveResult ResolvePageAddress(string pageAddress) 
 		{
 			using (var webclient = new WebClient()) 
@@ -21,8 +21,8 @@ namespace supervkapp
 				var Response = webclient.DownloadString(
 					String.Format(
 						Url,
-						"utils.ResolvePageAddress",
-						String.Format("page_Address={0}", pageAddress)));
+						"utils.resolveScreenName",
+						String.Format("screen_name={0}", pageAddress)));
 
 				var response = JsonConvert.DeserializeObject<Reply<ResolveResult>>(Response);
 				if (response != null)
@@ -42,9 +42,9 @@ namespace supervkapp
 		}
 		public  User GetUser(uint id) 
 		{
-			using (var wc = new WebClient()) 
+			using (var webclient = new WebClient()) 
 			{
-				var Response = wc.DownloadString(
+				var Response = webclient.DownloadString(
 					String.Format(
 						Url,
 						"users.get",
@@ -61,9 +61,9 @@ namespace supervkapp
 		}
 		public  List<User> GetUsers(params uint[] ids) 
 		{
-			using (var wc = new WebClient()) 
+			using (var webclient = new WebClient()) 
 			{
-				var Response = wc.DownloadString(
+				var Response = webclient.DownloadString(
 					String.Format(
 						Url,
 						"users.get",

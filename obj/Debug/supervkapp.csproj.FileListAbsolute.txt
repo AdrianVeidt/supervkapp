@@ -5,3 +5,4 @@ C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\bin\Debug\Newtonsoft.Jso
 C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\obj\Debug\supervkapp.exe
 C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\obj\Debug\supervkapp.pdb
+C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\obj\Debug\supervkapp.csprojResolveAssemblyReference.cache
