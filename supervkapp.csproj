@@ -61,12 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Api.cs" />
-    <Compile Include="Essences\AboutComments.cs" />
-    <Compile Include="Essences\AboutLikes.cs" />
-    <Compile Include="Essences\Post.cs" />
-    <Compile Include="Essences\AboutReposts.cs" />
-    <Compile Include="Essences\ResolveResult.cs" />
-    <Compile Include="Essences\User.cs" />
+    <Compile Include="Essences.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Response.cs" />

@@ -12,7 +12,7 @@ namespace supervkapp {
 			var posts = vkobject.GetFriendsTopPosts("https://vk.com/egorveidt/", (1 * 24 * 3600), 5);
 
 			foreach (var post in posts) {
-				Console.WriteLine("Id: {0:D9}; likes: {1}", post.Id, post.LikesInfo.Count);
+				Console.WriteLine("Id: {0:D9}; likes: {1};", post.Id, post.LikesInfo.Count);
 			}
 
 			Console.ReadKey();
