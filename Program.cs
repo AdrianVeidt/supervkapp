@@ -9,12 +9,10 @@ namespace supervkapp {
 	class Program {
 		static void Main(string[] args) {
 			var vkobject = new Api();
-			var posts = vkobject.GetFriendsTopPosts("https://vk.com/egorveidt/", (1 * 24 * 3600), 5);
-
+			var posts = vkobject.GetFriendsTopPosts("https://vk.com/egorveidt/", (7*24*3600), 10);
 			foreach (var post in posts) {
-				Console.WriteLine("Id: {0:D9}; likes: {1};", post.Id, post.LikesInfo.Count);
+				Console.WriteLine("PostID \t {0} \t ownerID: {1} \t likes: {2}", post.Id, post.OwnerId, post.LikesInfo.Count);
 			}
-
 			Console.ReadKey();
 		}
 	}

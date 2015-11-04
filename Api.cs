@@ -13,7 +13,7 @@ namespace supervkapp
 {
 	public class Api 
 	{
-		private const string Url = "https://api.vk.com/method/{0}?{1}&v=5.37&access_token=82bec40f2b3fffd36454c27001b37239bb1545250de02d8867471baf8d0ae2cce0a95cace66f722bac110";
+		private const string Url = "https://api.vk.com/method/{0}?{1}&v=5.37&access_token=4fec65e4794dff7bb2d75402f7211699dd7c1873215ff8d876c7d16897b36cb817fbb3ce9ffa82a00fc48";
 		public  ResolveResult ResolvePageAddress(string pageAddress) 
 		{
 			using (var webclient = new WebClient()) 
