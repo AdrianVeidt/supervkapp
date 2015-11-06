@@ -15,13 +15,20 @@ namespace Tests {
 		}
 
 		[Test]
-		public void GetFriendsTopPostsIsCorrect() {
-			var vkobject = new Api();
-			var posts = vkobject.GetFriendsTopPosts("vk.com/egorveidt", 7 * 24 * 3600, 10);
-			Assert.AreEqual(posts.Count, 10);
-			Assert.AreEqual(posts[0].LikesInfo.Count, 51);
-			Assert.AreEqual(posts[9].LikesInfo.Count, 37);
+		public void ParseUrlIsNOTCorrect() {
+			var ex = Assert.Throws<Exception>(() => Api.ParseUrl(@"https://vk.com/12345"));
+			Assert.That(ex.Message, Is.EqualTo("Url is not correct."));
+
 		}
+
+		//[Test]
+		//public void GetFriendsTopPostsIsCorrect() {
+		//	var vkobject = new Api();
+		//	var posts = vkobject.GetFriendsTopPosts("vk.com/egorveidt", 7 * 24 * 3600, 10);
+		//	Assert.AreEqual(posts.Count, 10);
+		//	Assert.AreEqual(posts[0].LikesInfo.Count, 51);
+		//	Assert.AreEqual(posts[9].LikesInfo.Count, 37);
+		//}
 
 	}
 }
