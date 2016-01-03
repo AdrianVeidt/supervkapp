@@ -7,4 +7,6 @@ C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\obj\Debug\supervkapp.exe
 C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\obj\Debug\supervkapp.pdb
 C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\bin\Debug\nunit.framework.dll
 C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\bin\Debug\nunit.framework.xml
+C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\bin\Debug\Moq.dll
+C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\bin\Debug\Moq.xml
 C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\obj\Debug\supervkapp.csprojResolveAssemblyReference.cache
