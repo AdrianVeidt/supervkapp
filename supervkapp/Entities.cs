@@ -78,25 +78,6 @@ namespace supervkapp
 			set;
 		}
 
-		[JsonProperty("reply_owner_id")]
-		public int ReplyOwnerId 
-		{
-			get;
-			set;
-		}
-		[JsonProperty("reply_post_id")]
-		public uint ReplyPostId 
-		{
-			get;
-			set;
-		}
-
-		[JsonProperty("friends_only")]
-		public int IsFriendsOnly 
-		{
-			get;
-			set;
-		}
 
 		[JsonProperty("comments")]
 		public AboutComments CommentsInfo 
@@ -125,12 +106,24 @@ namespace supervkapp
 			set;
 		}
 
-		[JsonProperty("signer_id")]
-		public uint SignerId
-		{
-			get;
-			set;
-		}
+		//[JsonProperty("signer_id")]
+		//public uint SignerId
+		//{
+		//	get;
+		//	set;
+		//}
+		//[JsonProperty("reply_owner_id")]
+		//public int ReplyOwnerId
+		//{
+		//	get;
+		//	set;
+		//}
+		//[JsonProperty("reply_post_id")]
+		//public uint ReplyPostId
+		//{
+		//	get;
+		//	set;
+		//}
 
 		[JsonConverter(typeof(StringEnumConverter))]
 		public enum PostType
