@@ -1,0 +1,3 @@
+C:\Users\Veidt\Desktop\supervkapp\supervkapp\Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
+C:\Users\Veidt\Desktop\supervkapp\supervkapp\Tests\bin\Debug\Tests.exe.config
+C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache

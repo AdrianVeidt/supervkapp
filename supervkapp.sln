@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "supervkapp", "supervkapp\supervkapp.csproj", "{F5C663F6-F01F-4C92-BC50-E2C5EF0C9310}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{23BFB3FC-4941-409F-BC64-6AC39EB91A31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5C663F6-F01F-4C92-BC50-E2C5EF0C9310}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5C663F6-F01F-4C92-BC50-E2C5EF0C9310}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5C663F6-F01F-4C92-BC50-E2C5EF0C9310}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5C663F6-F01F-4C92-BC50-E2C5EF0C9310}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23BFB3FC-4941-409F-BC64-6AC39EB91A31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23BFB3FC-4941-409F-BC64-6AC39EB91A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23BFB3FC-4941-409F-BC64-6AC39EB91A31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23BFB3FC-4941-409F-BC64-6AC39EB91A31}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
