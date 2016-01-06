@@ -1,18 +1,46 @@
 ﻿using System;
 using System.Collections.Generic;
-using supervkapp.Entities;
+using supervkapp;
 
 namespace Domains
 {
 	public class UserDomain
 	{
-		public virtual int Id { get; protected set; }
-		public virtual string FirstName { get; set; }
-		public virtual string LastName { get; set; }
-		public virtual string Avatar { get; set; }
-		public virtual bool isMale { get; set; }
-		public virtual int age { get; set; }
-		public virtual IList<PostDomain> Posts { get; protected set; }
+		public virtual int Id
+		{
+			get;
+			protected set;
+		}
+		public virtual string FirstName
+		{
+			get;
+			set;
+		}
+		public virtual string LastName
+		{
+			get;
+			set;
+		}
+		public virtual string Avatar
+		{
+			get;
+			set;
+		}
+		public virtual bool Male
+		{
+			get;
+			set;
+		}
+		public virtual int Age
+		{
+			get;
+			set;
+		}
+		public virtual IList<PostDomain> Posts
+		{
+			get;
+			protected set;
+		}
 		public UserDomain()
 		{
 			Posts = new List<PostDomain>();
@@ -22,6 +50,6 @@ namespace Domains
 			post.Owner = this;
 			Posts.Add(post);
 		}
-		
+
 	}
 }

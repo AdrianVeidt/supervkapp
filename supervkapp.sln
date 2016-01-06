@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "supervkapp", "supervkapp\su
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{23BFB3FC-4941-409F-BC64-6AC39EB91A31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORM", "ORM\ORM.csproj", "{FAF44FBD-8522-450F-94AB-30219AFA9B49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{23BFB3FC-4941-409F-BC64-6AC39EB91A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23BFB3FC-4941-409F-BC64-6AC39EB91A31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23BFB3FC-4941-409F-BC64-6AC39EB91A31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAF44FBD-8522-450F-94AB-30219AFA9B49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAF44FBD-8522-450F-94AB-30219AFA9B49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAF44FBD-8522-450F-94AB-30219AFA9B49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAF44FBD-8522-450F-94AB-30219AFA9B49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

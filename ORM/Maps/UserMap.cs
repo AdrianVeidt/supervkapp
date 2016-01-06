@@ -1,6 +1,6 @@
 ﻿using FluentNHibernate.Mapping;
-using ORM.Dmns;
-using supervkapp.Entities;
+using Domains;
+using supervkapp;
 
 namespace Maps
 {

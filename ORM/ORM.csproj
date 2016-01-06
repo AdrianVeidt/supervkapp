@@ -30,37 +30,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AutoMapper">
-      <HintPath>..\packages\AutoMapper.4.1.1\lib\net45\AutoMapper.dll</HintPath>
-    </Reference>
     <Reference Include="FluentNHibernate">
       <HintPath>..\packages\FluentNHibernate.2.0.3.0\lib\net40\FluentNHibernate.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.AspNet.Identity.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.1.0.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="NHibernate">
-      <HintPath>..\packages\NHibernate.4.0.4.4000\lib\net40\NHibernate.dll</HintPath>
+      <HintPath>..\packages\NHibernate-4.0.4.GA-bin\Required_Bins\NHibernate.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GlobalAutoMapping.cs" />
-    <Compile Include="Domains\CityDomain.cs" />
-    <Compile Include="Domains\CountryDomain.cs" />
-    <Compile Include="Domains\LoginUserDomain.cs" />
-    <Compile Include="Domains\PostDomain.cs" />
-    <Compile Include="Domains\PostSnapshotDomain.cs" />
-    <Compile Include="Domains\SnaphotSequenceDomain.cs" />
-    <Compile Include="Domains\UserDomain.cs" />
-    <Compile Include="Maps\CityMap.cs" />
-    <Compile Include="Maps\CountryMap.cs" />
-    <Compile Include="Maps\LoginUserMap.cs" />
+    <Compile Include="Dmns\PostDomain.cs" />
+    <Compile Include="Dmns\UserDomain.cs" />
     <Compile Include="Maps\PostMap.cs" />
-    <Compile Include="Maps\PostSnapshotMap.cs" />
-    <Compile Include="Maps\SnapshotSequenceMap.cs" />
     <Compile Include="Maps\UserMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -68,9 +50,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\VkApi\VkApi.csproj">
+    <ProjectReference Include="..\supervkapp\supervkapp.csproj">
       <Project>{5F580E3D-61D8-4F0B-9313-C563AE6DA7B2}</Project>
-      <Name>VkApi</Name>
+      <Name>supervkapp</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
