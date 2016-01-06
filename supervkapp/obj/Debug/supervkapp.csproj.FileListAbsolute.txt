@@ -21,3 +21,4 @@ C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\supervkapp\bin\Debug\nun
 C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\supervkapp\bin\Debug\Moq.xml
 C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\supervkapp\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\supervkapp\bin\Debug\nunit.framework.xml
+C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\supervkapp\obj\Debug\supervkapp.csprojResolveAssemblyReference.cache
