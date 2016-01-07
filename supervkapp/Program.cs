@@ -13,7 +13,7 @@ namespace supervkapp
 {
 	class Program
 	{
-		private const string ConnectionString = "server=localhost;user id=root;database=supervkapp"; //;persistsecurityinfo=True
+		private const string ConnectionString = "server=localhost;user id=root;database=supervkappdb"; //;persistsecurityinfo=True
 		static void Main(string[] args)
 		{
 			var nhibernatehelper = new NHibernateHelper(ConnectionString);

@@ -3,15 +3,11 @@ C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\ORM\bin\Debug\Domain.dll
 C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\ORM\bin\Debug\Domain.pdb
 C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\ORM\bin\Debug\FluentNHibernate.dll
 C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\ORM\bin\Debug\NHibernate.dll
-C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\ORM\bin\Debug\supervkapp.exe
-C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\ORM\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\ORM\bin\Debug\Iesi.Collections.dll
-C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\ORM\bin\Debug\supervkapp.pdb
 C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\ORM\bin\Debug\FluentNHibernate.pdb
 C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\ORM\bin\Debug\FluentNHibernate.xml
 C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\ORM\bin\Debug\NHibernate.pdb
 C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\ORM\bin\Debug\NHibernate.xml
-C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\ORM\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\ORM\bin\Debug\Iesi.Collections.xml
 C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\ORM\obj\Debug\Domain.dll
 C:\Users\Veidt\Desktop\supervkapp\supervkapp\supervkapp\ORM\obj\Debug\Domain.pdb
