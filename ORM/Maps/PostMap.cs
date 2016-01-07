@@ -1,6 +1,6 @@
 ﻿using FluentNHibernate.Mapping;
 using Domains;
-using supervkapp;
+
 
 namespace Maps
 {

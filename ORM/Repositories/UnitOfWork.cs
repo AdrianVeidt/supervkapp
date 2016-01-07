@@ -3,7 +3,7 @@ using System.Data;
 //using System.Transactions;
 using NHibernate;
 
-namespace UnitOfWork
+namespace ORM.UnitOfWork
 {
 	[Obsolete("Use sessions with transactions")]
 	public class UnitOfWork : IUnitOfWork

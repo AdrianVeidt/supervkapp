@@ -1,7 +1,7 @@
 ﻿using System;
 using NHibernate;
 
-namespace UnitOfWork
+namespace ORM.UnitOfWork
 {
 	public interface IUnitOfWork :IDisposable
 	{
