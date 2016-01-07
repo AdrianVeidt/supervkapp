@@ -14,7 +14,7 @@ namespace Maps
 			Map(x => x.FirstName).Column("firstname");
 			Map(x => x.LastName).Column("lastname");
 			Map(x => x.AccessToken).Column("accesstoken");
-			
+			/*
 			HasManyToMany(x => x.Users)
 				.Table("login_user")
 				.ParentKeyColumn("loginId")
@@ -25,7 +25,7 @@ namespace Maps
 				.Table("login_post")
 				.ParentKeyColumn("loginId")
 				.ChildKeyColumn("postId")
-				.LazyLoad().Inverse().Cascade.SaveUpdate();
+				.LazyLoad().Inverse().Cascade.SaveUpdate();*/
 		}
 	}
 }

@@ -8,15 +8,15 @@ namespace Maps
 	{
 		public PostMap()
 		{
-			Table("Posts");
+			Table("posts");
 			Id(x => x.Id).Column("idPost").GeneratedBy.Assigned();
-			References(x => x.Owner).Column("idOwner").Not.Nullable();
+			//References(x => x.Owner).Column("idOwner").Not.Nullable();
 			Map(x => x.Date).Column("date");
 			Map(x => x.Text).Column("text");
 			Map(x=> x.Like).Column("likes");
-			HasMany(x => x.Snapshots).KeyColumn("idPost").LazyLoad().Inverse().Cascade.SaveUpdate();
+			/*HasMany(x => x.Snapshots).KeyColumn("idPost").LazyLoad().Inverse().Cascade.SaveUpdate();
 			References(x => x.SequenceSnaphot).Column("sequenceId").Not.Nullable();
-			//HasManyToMany(x => x.LoginUsers).Table("loginuser_post").ParentKeyColumn("postId").ChildKeyColumn("loginId").LazyLoad().Cascade.SaveUpdate();
+			HasManyToMany(x => x.LoginUsers).Table("login_post").ParentKeyColumn("postId").ChildKeyColumn("loginId").LazyLoad().Cascade.SaveUpdate();*/
 		}
 	}
 }

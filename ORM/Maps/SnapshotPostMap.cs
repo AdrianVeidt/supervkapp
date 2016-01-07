@@ -11,7 +11,7 @@ namespace Maps
 			Table("snapshotpost");
 
 			Id(x => x.Id).Column("id").GeneratedBy.Increment();
-			References(x => x.Post).Column("postid").Not.Nullable();
+			//References(x => x.Post).Column("postsid").Not.Nullable();
 			Map(x => x.Date).Column("date");
 			Map(x => x.CountComments).Column("countcomments");
 			Map(x => x.CountLikes).Column("countlikes");

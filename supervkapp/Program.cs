@@ -34,9 +34,18 @@ namespace supervkapp
 				Date = new DateTime(2016, 01, 07),
 				Text = "test text exst",
 			};
-			var userRepository = new Repository<UserDomain>(unitofwork.Session);
+
+			post.AddSnapshot(new PostSnapshotDomain()
+			{
+				CountComments = 1,
+				CountLikes = 10,
+				CountReposts = 2,
+				Date = new DateTime(2016, 01, 07)
+			});
+
 			user.AddPost(post);
-			userRepository.Save(user);
+			var userRepository = new Repository<UserDomain>(unitofwork.Session);
+			userRepository.SaveOrUpdate(user);
 			unitofwork.Commit();
 
 		}

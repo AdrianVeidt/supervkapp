@@ -12,7 +12,7 @@ namespace Maps
 
 			Id(x => x.Id).Column("id").GeneratedBy.Increment();
 			Map(x => x.Date).Column("date");
-			HasMany(x => x.Posts).KeyColumn("sequenceId").LazyLoad().Inverse().Cascade.SaveUpdate();
+			//HasMany(x => x.Posts).KeyColumn("sequenceId").LazyLoad().Inverse().Cascade.SaveUpdate();
 		}
 	}
 }
