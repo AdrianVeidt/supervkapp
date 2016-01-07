@@ -14,9 +14,9 @@ namespace Maps
 			Map(x => x.Date).Column("date");
 			Map(x => x.Text).Column("text");
 			Map(x=> x.Like).Column("likes");
-			//HasMany(x => x.Snapshots).KeyColumn("idPost").LazyLoad().Inverse().Cascade.SaveUpdate();
-			//References(x => x.SnaphotSequence).Column("sequenceId").Not.Nullable();
-
+			HasMany(x => x.Snapshots).KeyColumn("idPost").LazyLoad().Inverse().Cascade.SaveUpdate();
+			References(x => x.SequenceSnaphot).Column("sequenceId").Not.Nullable();
+			//HasManyToMany(x => x.LoginUsers).Table("loginuser_post").ParentKeyColumn("postId").ChildKeyColumn("loginId").LazyLoad().Cascade.SaveUpdate();
 		}
 	}
 }

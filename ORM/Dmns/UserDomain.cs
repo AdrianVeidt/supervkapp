@@ -41,15 +41,29 @@ namespace Domains
 			get;
 			protected set;
 		}
+		public virtual IList<LoginDomain> LoginUsers
+		{
+			get;
+			protected internal set;
+		}
+
 		public UserDomain()
 		{
 			Posts = new List<PostDomain>();
+			LoginUsers = new List<LoginDomain>();
 		}
+
 		public virtual void AddPost(PostDomain post)
 		{
 			post.Owner = this;
 			Posts.Add(post);
 		}
-
+		public virtual void AddPosts(IEnumerable<PostDomain> posts)
+		{
+			foreach (var post in posts)
+			{
+				AddPost(post);
+			}
+		}
 	}
 }

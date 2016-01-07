@@ -13,7 +13,7 @@ namespace supervkapp
 {
 	class Program
 	{
-		private const string ConnectionString = "server=localhost;user id=root;database=supervkappdb"; //;persistsecurityinfo=True
+		private const string ConnectionString = "server=localhost;user id=root;persistsecurityinfo=True;database=supervkappdb"; //
 		static void Main(string[] args)
 		{
 			var nhibernatehelper = new NHibernateHelper(ConnectionString);
@@ -33,11 +33,10 @@ namespace supervkapp
 			{
 				Date = new DateTime(2016, 01, 07),
 				Text = "test text exst",
-				Like = 123
-				//забыл учесть комменты и репосты, dafuq
 			};
-
+			var userRepository = new Repository<UserDomain>(unitofwork.Session);
 			user.AddPost(post);
+			userRepository.Save(user);
 			unitofwork.Commit();
 
 		}

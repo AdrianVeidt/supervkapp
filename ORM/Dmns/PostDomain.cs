@@ -30,27 +30,47 @@ namespace Domains
 		{
 			get;
 			set;
-		} 
-		//public virtual SnaphotSequenceDomain SnaphotSequence { get; protected internal set; }
-		//public virtual IList<PostSnapshotDomain> Snapshots { get; protected internal set; }
+		}
+		public virtual SequenceSnaphotDomain SequenceSnaphot
+		{
+			get;
+			protected internal set;
+		}
+
+		public virtual IList<PostSnapshotDomain> Snapshots
+		{
+			get;
+			protected internal set;
+		}
+
+		public virtual IList<LoginDomain> LoginUsers
+		{
+			get;
+			protected internal set;
+		}
+
 
 		public PostDomain()
 		{
-			//Snapshots = new List<PostSnapshotDomain>();
+			Snapshots = new List<PostSnapshotDomain>();
+			LoginUsers = new List<LoginDomain>();
 		}
+
 		public virtual void SetOwner(UserDomain owner)
 		{
 			owner.AddPost(this);
 		}
-		/*public virtual void SetSequence(SnaphotSequenceDomain sequence)
+
+		public virtual void SetSequence(SequenceSnaphotDomain sequence)
 		{
 			sequence.AddPost(this);
 		}
+
 		public virtual void AddSnapshot(PostSnapshotDomain snapshot)
 		{
 			snapshot.SetPost(this);
 			Snapshots.Add(snapshot);
-		}*/
+		}
 
 	}
 }

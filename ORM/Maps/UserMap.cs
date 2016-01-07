@@ -15,6 +15,12 @@ namespace Maps
 			Map(x => x.Male).Column("isMale");
 			Map(x => x.Age).Column("age");
 			HasMany(x => x.Posts).KeyColumn("idOwner").LazyLoad().Inverse().Cascade.SaveUpdate();
+
+			HasManyToMany(x => x.LoginUsers)
+				.Table("login_user")
+				.ParentKeyColumn("userId")
+				.ChildKeyColumn("loginId")
+				.LazyLoad().Cascade.SaveUpdate();
 		}
 	}
 }
