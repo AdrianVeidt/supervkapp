@@ -15,7 +15,7 @@ namespace supervkapp
 	{
 		//https://oauth.vk.com/authorize?client_id=5091660&display=page&redirect_uri=http://vk.com/callback&scope=friends&response_type=token&v=5.42
 
-		private const string Url = "https://api.vk.com/method/{0}?{1}&v=5.37&access_token=fdbb5f01397530c5bddfe9e888acbbe185610a77fb17444aec3f9a4f6ae021d823171ac1dc6b46df6e3ba";
+		private const string Url = "https://api.vk.com/method/{0}?{1}&v=5.37&access_token=fdbb5";
 		public  ResolveResult ResolvePageAddress(string pageAddress) 
 		{
 			using (var webclient = new WebClient()) 
